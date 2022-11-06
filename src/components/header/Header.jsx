@@ -43,12 +43,12 @@ const Header = () => {
   };
 
   let activeStyle = {
-    borderBottom: "3px solid lightblue"
+    borderBottom: "2px solid lightblue"
   };
 
   return (
     <header className={DARKMODE ? "" : "light"}>
-      <div className={DARKMODE ? "brand" : "brand "}>webPhere</div>
+      <div className={DARKMODE ? "brand" : "brand "}>dev Debby</div>
       <ul className={showMenu ? "navActive" : ""} >
         <li>
           <NavLink to={"/Repo"} onClick={HideMenuOnLinkClicked} >
