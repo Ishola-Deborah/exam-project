@@ -1,0 +1,63 @@
+.paginate {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, auto));
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pageButtons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pageButtons button {
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #242424;
+  color: #4784c9;
+}
+
+.pageButtons button:hover {
+  background-color: black;
+  color: white;
+}
+
+.prev,
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.prev > span,
+.next > span {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .paginate {
+    grid-template-columns: 1fr;
+  }
+
+  .pageButtons button {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .paginate {
+    grid-template-columns: repeat(2, minmax(300px, auto));
+    align-items: flex-start;
+  }
+}

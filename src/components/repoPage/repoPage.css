@@ -1,0 +1,100 @@
+.profile_image {
+  grid-area: profile_image;
+  margin-right: 10px;
+}
+
+.profile_image img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.repo_name {
+  grid-area: repo_name;
+}
+
+.repo_name a {
+  padding: 0;
+  color: #4784c9;
+  font-weight: 400;
+  border: none;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.repo_name a:hover {
+  background: none;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.description {
+  grid-area: description;
+  font-size: 12px;
+}
+
+.public {
+  grid-area: public;
+  text-align: right;
+  border-radius: 8px;
+  font-size: 12px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.langColor {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.language {
+  grid-area: language;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.starred {
+  grid-area: starred;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.starred > span {
+  font-size: 14px;
+}
+
+.followIndex {
+  grid-area: followIndex;
+  text-align: right;
+  color:rgba(255, 255, 255, 0.541);
+  font-size: 12px;
+}
+
+.repoPage {
+  border: 1px solid rgba(128, 128, 128, 0.527);
+  border-radius: 8px;
+  display: grid;
+  padding: 15px 15px;
+  gap: 5px;
+  grid-template-areas:
+    "profile_image repo_name repo_name public public"
+    "description description description description description"
+    "... language ... ... ..."
+    "... starred ... ... ..."
+    "... ... ... ... followIndex";
+}
+
+@media screen and (max-width: 500px) {
+  .profile_image {
+    margin-right: 10px;
+  }
+
+  .repo_name a {
+    font-size: 14px;
+  }
+}
