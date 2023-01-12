@@ -5,9 +5,11 @@ import { ThemeProvider } from "./context/theme/ThemeContext";
 import ErrorPage from "./pages/errorPage/ErrorPage";
 import Loader from "./components/loader/Loader"
 import App from "./App";
-const About = lazy(() => import("./pages/about/About"))
+// const About = lazy(() => import("./pages/about/About"))
 import Repo from "./pages/repo/Repo"
 import SingleRepo from "./pages/singleRepo/SingleRepo"
+import About from "./pages/about/About"
+
 
 const router = createHashRouter([
   {
@@ -38,8 +40,10 @@ const router = createHashRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+   
     <ThemeProvider>
       <RouterProvider router={router} />
     </ThemeProvider>
+    
   </React.StrictMode>
 );

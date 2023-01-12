@@ -48,7 +48,7 @@ const Header = () => {
 
   return (
     <header className={DARKMODE ? "" : "light"}>
-      <div className={DARKMODE ? "brand" : "brand "}>dev Debby</div>
+      <div className={DARKMODE ? "brand" : "brand "}>Github App</div>
       <ul className={showMenu ? "navActive" : ""} >
         <li>
           <NavLink to={"/Repo"} onClick={HideMenuOnLinkClicked} >
