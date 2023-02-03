@@ -135,16 +135,14 @@ const About = () => {
                 className={toggle === 3 ? "content active-content" : "content"}
               >
                 <div className="exp-column">
-                  <h3>Web Developer</h3>
-                  <span>2020-2022</span>
+                  <h3>Carburant</h3>
+                  <span>2022</span>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Non exercitationem ab sapiente ea, vel quisquam odio
                     reiciendis culpa incidunt minima?
                   </p>
                 </div>
-
-
 
                 <div className="exp-column">
                   <h3>Horizon</h3>
